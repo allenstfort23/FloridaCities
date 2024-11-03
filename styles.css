@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* 2. Hover pseudo-class for navigation links */
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #0073e6;
+}
+
+/* Float property for images */
+.small-image {
+    width: 300px;  /* Set the desired width */
+    height: auto;  /* Maintain aspect ratio */
+    float: right;
+    margin-left: 20px;
+}
+
+/* Main section styles */
+.App {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+section.tag-section, section.city-info {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+img {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+}
+
+span.section-tag, span.aside-tag {
+    background-color: #ffeb3b;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Aside styles */
+aside.tag-aside {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #0044cc;
+}
+
+aside h3 {
+    color: #0044cc;
+    font-size: 1.5em;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Additional requirements */
+
+/* 4. Absolute positioning */
+#absolute-positioned-element {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* 5. Relative positioning */
+#relative-positioned-element {
+    position: relative;
+    top: 10px;  
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+/* Class selector used twice on the same page */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* ID selector */
+#footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}

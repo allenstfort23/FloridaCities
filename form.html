@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script>
+        function validateEmails() {
+            var email = document.getElementById("email").value;
+            var confirmEmail = document.getElementById("confirmEmail").value;
+
+            if (email !== confirmEmail) {
+                alert("The email addresses do not match. Please try again.");
+                return false;  // Prevent form submission
+            }
+            return true;  // Allow form submission
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tallahassee.html">Tallahassee</a></li>
+                    <li><a href="miami.html">Miami</a></li>
+                    <li><a href="orlando.html">Orlando</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="App">
+            <section class="tag-section">
+                <img src="/florida-symbol.jpg" class="small-image" alt="Summer Paradise"/>
+            </section>
+            <section class="form-section">
+                <h2>We’d Love to Hear from You</h2>
+                <form onsubmit="return validateEmails()">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmEmail">Confirm Email Address:</label>
+                        <input type="email" id="confirmEmail" name="confirmEmail" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question">Your Question:</label>
+                        <textarea id="question" name="question" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+            <aside class="tag-aside">
+                <h3>Additional Information</h3>
+                <p>
+                    <ul>
+                        <li>We answer questions within 24 hours.</li>
+                        <li>Please check the offical Florida website for more details.</li>
+                    </ul>
+                </p>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Welcome to Florida | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
